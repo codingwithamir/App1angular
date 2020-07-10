@@ -1,0 +1,37 @@
+<!-- <p>{{ testObject |json }}</p>
+<hr> -->
+
+<!-- <h1>ngStyle</h1>
+<div [ngStyle]="{'backgroundColor':'red'}">Testng ngStyle 1</div>
+<div [ngStyle]="{'backgroundColor':getColor()}">Testng ngStyle 2</div>
+<div [style.backgrondColor]="getColor()">Testng ngStyle 3</div> -->
+
+<!-- <hr>
+
+<h1>ngClass</h1>
+<div [ngClass]="{'markred':this.testObject.id>=6}">hello</div> -->
+
+<!-- <hr>
+<h1>ngIf</h1>
+<div *ngIf="(this.testObject.price >=100)">ngIf Example</div>
+<div *ngIf="(this.testObject.price == 100);then thenContent; else elseContent">ngIfElse Example</div>
+<ng-template #thenContent>
+    <div>This is then content</div>
+</ng-template>
+<ng-template #elseContent>
+    <div>This is Else content</div>
+</ng-template> -->
+
+<hr>
+<h1>ngSwitch</h1>
+<select [(ngModel)]="selectedCountry">
+    <option value="0">--select--</option>
+    <option value="1">pakistan</option>
+    <option value="2">china</option>
+</select>
+<div [ngSwitch]="selectedCountry">
+    <div *ngSwitchCase=1>Pakistan</div>
+    <div *ngSwitchCase=2>china</div>
+    <div *ngSwitchCase=3>Wrong Selection</div>
+
+</div>
